@@ -9,7 +9,7 @@ table = dynamodb.Table('acquesa_ver1')
 
 table.delete_item(
     Key={
-        'username': 'vijay',
-        'password': 'bhaskar',
+        'first_name': 'vijay',
+        'last_name': 'bhaskar',
     }
 )

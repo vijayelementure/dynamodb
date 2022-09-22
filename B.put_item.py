@@ -15,8 +15,8 @@ password = input("enter the password ")
 table.put_item(
             Item={
                 "id":1,
-            "username":username,
-            "password":password,
+            "first_name":username,
+            "last_name":password,
             "data": {"jid":119,"uid":"84:f7:3:67:79:b0","app":"door_gateway","evt":{"etm":"2022-03-167T11:17:21Z","dsd":4865}},
             "meta": {"ver":"1.0"}
         }

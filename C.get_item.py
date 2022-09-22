@@ -11,8 +11,8 @@ table = dynamodb.Table('acquesa_ver1')
 
 received = table.get_item(
     Key={
-        'username': 'vijay',
-        'password': 'bhaskar'
+        'first_name': 'vijay',
+        'last_name': 'bhaskar'
     }
 )
 item = received['Item']

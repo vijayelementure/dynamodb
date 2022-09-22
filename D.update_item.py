@@ -11,8 +11,8 @@ table = dynamodb.Table('acquesa_ver1')
 
 table.update_item(
     Key={
-        'username': 'vaishu',
-        'password': 'bhaskar'
+        'first_name': 'vaishu',
+        'last_name': 'bhaskar'
     },
     UpdateExpression='SET id = :value',
     ExpressionAttributeValues={
