@@ -5,28 +5,26 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-
-
-dynamodb = boto3.resource('dynamodb',region_name =os.getenv('REGION_NAME'),aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'))
+dynamodb = boto3.resource('dynamodb',region_name=os.getenv('REGION_NAME'),aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'))
 table = dynamodb.create_table(
-    TableName='acquesa_v1',
+    TableName='acquesa_ver1',
     KeySchema=[
         {
-            'AttributeName': 'username',
+            'AttributeName': 'first_name',
             'KeyType': 'HASH'
         },
         {
-            'AttributeName': 'password',
+            'AttributeName': 'last_name',
             'KeyType': 'RANGE'
         }
     ],
     AttributeDefinitions=[
         {
-            'AttributeName': 'username',
+            'AttributeName': 'first_name',
             'AttributeType': 'S'
         },
         {
-            'AttributeName': 'password',
+            'AttributeName': 'last_name',
             'AttributeType': 'S'
         },
     ],
