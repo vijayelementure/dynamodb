@@ -9,11 +9,11 @@ table = dynamodb.Table('acquesa_ver1')
 
 with table.batch_writer() as batch:
     batch.delete_item( Key={
-        'first_name': 'kaggal',
-        'last_name': 'shetty',
+        'first_name': 'vijay',
+        'last_name': 'shetty'
     })
     
     batch.delete_item( Key={
-        'first_name': 'vaishnavi',
-        'last_name': 'shetty',
+        'first_name': 'bhaskar',
+        'last_name': 'shetty'
     })
