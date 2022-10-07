@@ -14,9 +14,9 @@ table.update_item(
         'username': 'vaishu',
         'password': 'bhaskar'
     },
-    UpdateExpression='SET id = :value',
+    UpdateExpression='SET x = :value',
     ExpressionAttributeValues={
         ':value': 78
     }
 )
-print("id attribute has been updated successfully")
+print(" attribute has been updated successfully")

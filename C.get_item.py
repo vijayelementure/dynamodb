@@ -16,37 +16,38 @@ received = table.get_item(
     }
 )
 item = received['Item']
+print(item)
 
 
-print("real data")
-# print(item)
-print(type(item))
+# print("real data")
+# # print(item)
+# print(type(item))
 
-print("\n")
+# print("\n")
 
-# methods of dictionary applied for fetched data
-print("only values")
-print(item.values())
+# # methods of dictionary applied for fetched data
+# print("only values")
+# print(item.values())
 
-print("\n")
+# print("\n")
 
-print(item.popitem())
+# print(item.popitem())
 
-print("\n")
+# print("\n")
 
-print(item.pop("username"))
+# print(item.pop("username"))
 
-print("\n")
+# print("\n")
 
-print(item.keys())
+# print(item.keys())
 
-print("\n")
+# print("\n")
 
-print(item.items())
+# print(item.items())
 
-print("\n")
+# print("\n")
 
-print(item.get("username"))
+# print(item.get("username"))
 
-print("\n")
+# print("\n")
 

@@ -9,7 +9,7 @@ table = dynamodb.Table('lock_ver1')
 
 table.delete_item(
     Key={
-        'first_name': 'vijay',
+        'first_name': 'vaishu',
         'last_name': 'bhaskar',
     }
 )

@@ -8,12 +8,13 @@ dynamodb = boto3.resource('dynamodb',region_name = os.getenv('REGION_NAME'),aws_
 table = dynamodb.Table('lock_ver1')   
 
 
+
 # {"data":{"jid":118,"uid":"84:f7:3:67:79:b0","app":"door_gateway","evt":{"etm":"2022-03-167T11:17:21Z","dsd":4865}},"meta":{"ver":"1.0"}}
 
 table.put_item(
             Item={
             "username":"vijay",
-            "password":"bhaskar",
+            "password":"vaishu",
             "data": {"jid":119,"uid":"84:f7:3:67:79:b0","app":"door_gateway","evt":{"etm":"2022-03-167T11:17:21Z","dsd":4865}},
             "meta": {"ver":"1.0"}
         }
