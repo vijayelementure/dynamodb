@@ -1,5 +1,5 @@
 import boto3
-from boto3.dynamodb.conditions import Key
+from boto3.dynamodb.conditions import Key,Attr
 import os
 from dotenv import load_dotenv
 
@@ -12,5 +12,11 @@ table = dynamodb.Table('fueblockapp')
 response = table.query(
   KeyConditionExpression=Key('deviceid').eq('FA2022V01MDRN00000001')
 )
+
 print(response['Items'])
-print(type(response['Items']))
+
+print("\n================================")
+
+scanned = table.scan(FilterExpression=Attr('deviceid').eq('FA2022V01MDRN00000001'))
+
+print(scanned['Items'])

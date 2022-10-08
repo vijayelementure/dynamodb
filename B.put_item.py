@@ -14,7 +14,7 @@ table = dynamodb.Table('fueblockapp')
 
 ht = table.put_item(
     Item={
-        "deviceid":"FA2022V01MDRN00000001",
+        "deviceid":"FA2022V01MDRN00000005",
         "version": "1",
         "lock_status": True,
         "building_metadata": {
@@ -26,4 +26,3 @@ ht = table.put_item(
         "last_updated_by": "78912"
         }
 )
-print(ht)
