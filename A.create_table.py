@@ -10,21 +10,21 @@ table = dynamodb.create_table(
     TableName='lock_ver1',
     KeySchema=[
         {
-            'AttributeName': 'username',
+            'AttributeName': 'userid',
             'KeyType': 'HASH'
         },
         {
-            'AttributeName': 'password',
+            'AttributeName': 'gameid',
             'KeyType': 'RANGE'
         }
     ],
     AttributeDefinitions=[
         {
-            'AttributeName': 'username',
+            'AttributeName': 'userid',
             'AttributeType': 'S'
         },
         {
-            'AttributeName': 'password',
+            'AttributeName': 'gameid',
             'AttributeType': 'S'
         },
     ],
