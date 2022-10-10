@@ -2,6 +2,7 @@ import boto3
 import os
 import uuid
 from dotenv import load_dotenv
+import time
 
 load_dotenv()
 
@@ -14,8 +15,9 @@ table = dynamodb.Table('fueblockapp')
 
 ht = table.put_item(
     Item={
+        "email":"fgjlkjl",
         "deviceid":"FA2022V01MDRN00000005",
-        "version": "1",
+        "version": "",
         "lock_status": True,
         "building_metadata": {
             "installed_date": "2022-10-20",

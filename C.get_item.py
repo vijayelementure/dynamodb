@@ -14,7 +14,7 @@ received = table.get_item(
         'deviceid': 'FA2022V01MDRN00000001'
     }
 )
-item = received['Item']
+item = received['Item']['deviceid']
 print(item)
 
 

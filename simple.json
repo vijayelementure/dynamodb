@@ -1,6 +1,19 @@
+
+
 {
+    "FullName":"vijay bhaskar",
+    "email":"vijaybhaskarmyv@gmail.com",
+    "mobile":9741113585,
+    "HashedPassword":"dsjhgfsrjgidrgjldkgdkgg",
+    "verified": "ok",
+    "uuid":"AAAA-BBBB-CCCC-DDDD",
+
+
+
+
+    "deviceid":"FA2022V01MDRN00000005",
     "version": "1",
-    "lock_status": true,
+    "lock_status": "True",
     "building_metadata": {
         "installed_date": "2022-10-20",
         "installed_time": "20:51:10",
@@ -8,4 +21,4 @@
     },
     "last_updated": "2022-10-20T20:51:10",
     "last_updated_by": "78912"
-}
+    }
