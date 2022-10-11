@@ -22,9 +22,7 @@ response = s3.get_bucket_location(
 )['LocationConstraint']
 
 
-bucky = s3.list_buckets()
 
-print(bucky)
 
 print()
 
