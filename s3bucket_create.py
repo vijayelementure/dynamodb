@@ -9,11 +9,12 @@ s3_client = boto3.client('s3',region_name=os.getenv('REGION_NAME'),aws_access_ke
 
 response = s3_client.create_bucket(
     ACL='private',
-    Bucket='lockuserprofile',
+    Bucket='lockuserprofile5',
       CreateBucketConfiguration={
         'LocationConstraint': 'ap-south-1'
     }
     )
+
 
 
 print(response)
