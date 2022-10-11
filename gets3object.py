@@ -12,3 +12,6 @@ response = s3.get_bucket_location(
 
 print(response)
 
+x = s3.generate_presigned_post('profilepictureobject','god.png')
+
+print(x.get('url'))
