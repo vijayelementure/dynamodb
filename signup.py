@@ -20,6 +20,7 @@ table.put_item(
     "mobile":"",
     "HashedPassword":"",
     "uuid":"",
+    "verified":"",
     "account created": str(datetime.now())
     }
 
